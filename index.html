@@ -59,6 +59,8 @@
     let respuesta4 = document.querySelector("#response3");
     let respuesta2 = document.querySelector("#response4");
     let respuesta5 = document.querySelector("#response5");
+    let intervaloDeTiempo;
+    let tiempoFinalizado;
     
 
     function mostrarRespuesta(){
@@ -68,10 +70,10 @@
 
     function cuentaRegresiva(){
         const cuenta = document.querySelector("#temporizador");
-        setTimeout(gameOver, 1000 * 30);
+        tiempoFinalizado = setTimeout(gameOver, 1000 * 30);
     }
     
-    setInterval(atras, 1000)
+    intervaloDeTiempo = setInterval(atras, 1000)
     function atras (){
         document.querySelector("#temporizador").textContent -=1;
     }
@@ -80,9 +82,13 @@
         let Audio = document.querySelector("#GameOver")
         let Tick = document.querySelector("#Audio")
         document.querySelector("#temporizador").textContent = "Game Over"
+        clearInterval(intervaloDeTiempo);
+        clearTimeout(tiempoFinalizado);
+
         Tick.pause()
         Audio.play();
     }
+
 
     function reset(){
         location.reload()
