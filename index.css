@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #232946;
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h2{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fffffe;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    text-align: center;
+    color: #fffffe;
+
+}
+
+
+h3{
+    font-family: Arial , Times, serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #fffffe;
+}
+
+p{
+    font-family: Arial , Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fffffe;  
+}
+
+.BoxInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    gap: 10px;
+    background-color: #fffffe;
+    box-shadow: 10px 9px 18px 0px rgba(0,0,0,0.42);
+}
+
+.BoxInput img{
+    object-fit: contain;
+    width: 300px;
+    border-radius: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    text-align: center;
+    background-color: #232946;
+    color: #d4d8f0;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Boxbtn{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eebbc3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #232946;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fffffe;
+    transition: all 0.5 ease;
+    color: #eebbc3;
+}
